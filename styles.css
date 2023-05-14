@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.container {
+  margin: 0;
+  display: grid;
+  grid-template: 64px 1fr 48px / auto 1fr;
+}
+
+.container > * {
+  border: 2px dashed purple;
+}
+
+.container > * > * {
+  border: 1px dashed green;
+}
+
+.header {
+  grid-column: 2 / 3;
+}
+
+.header > div {
+  display: inline;
+}
+
+.sidebar {
+  grid-area: 1 / 1 / 4 / 2;
+}
+
+.content {
+  display: grid;
+  grid-template: 64px 1fr 1fr / 4fr 1fr;
+}
+
+.hero {
+  grid-column: 1 / 3;
+}
+
+.projects {
+  grid-row: 2 / 4;
+}
+
+div > img,
+div > p {
+  display: inline;
+}
